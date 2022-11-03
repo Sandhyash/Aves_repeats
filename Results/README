@@ -1,5 +1,5 @@
 ## This folder contains the input files, script and their respective output files.
-## The input files are aves_morethanseventy_combined, gene_species.txt, species_orders.txt, and the scripts used are order_rpt.R, simp.r, simpson_diversity.r, upset.r, repeat_figures_stacked_upset_simpson.sh.
+## The input files are aves_morethanseventy_combined, gene_species.txt, species_orders.txt, and the scripts used are order_rpt.R, stacked.r, simp.r, simpson_diversity.r, upset.r, repeat_figures_stacked_upset_simpson.sh.
 ## For generating the Figure1, S1 and S2, the follwing script is used. 
 chmod 777 repeat_figures_stacked_upset_simpson.sh
 ./repeat_figures_stacked_upset_simpson.sh
