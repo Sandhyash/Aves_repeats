@@ -1,0 +1,2 @@
+aves	MAN1C1	115	-	0.978
+aves	MAN1C1	119	-	0.980
