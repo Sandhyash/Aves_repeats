@@ -1,0 +1,17 @@
+## This folder contains the input files, script and their respective output files.
+## The input files are aves_morethanseventy_combined, gene_species.txt, species_orders.txt, and the scripts used are order_rpt.R, simp.r, simpson_diversity.r, upset.r, repeat_figures_stacked_upset_simpson.sh.
+## For generating the Figure1, S1 and S2, the follwing script is used. 
+chmod 777 repeat_figures_stacked_upset_simpson.sh
+./repeat_figures_stacked_upset_simpson.sh
+
+## For generating supplementary figure S3 the input file is aves_morethanseventy_combined and the script used to plot is frequency.r.
+Rscript frequency.r
+
+## For generating the figure F2, the input files required are repeat_summary_aves_ordered.txt and aves.nwk. The script used to plot it are pie_chart.r and pie_chart.sh.
+chmod 777 pie_chart.sh
+./pie_chart.sh
+
+## For generating the repeat expansion and contraction figures of RUNX2, NHLH2, MAN1C1 and MNX1 genes are in their respective folders inside aves_candidate folder. Each gene folder contains the input, script and output files in them. The figures generated are figure F3, Figure4, Supplementary figure S5 and Supplementary figure S6.
+## all_aves.zip zipped file contains all the genes with significant expansion and contraction of repeats predicted by PIC.
+## biological_processes.png, cellular_components.png and, molecular_functions.png are the GO enrichment of the genes in aves having repeats with total genes in aves as background. These are used to make supplementary figure S4.
+## man1c1_anas_platyrhynchos_2d.png, man1c1_taeniopygia_guttata_2d.png are the figures generated using PROTTER web server with the secondary structures predicted using Proteus2. These are used in Supplementary Figure S5. 
