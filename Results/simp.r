@@ -1,0 +1,5 @@
+a=read.table("TROGONIFORMES_rpt_count",header=F)
+a$V3=(a$V2*(a$V2 -1))/(sum(a$V2)*(sum(a$V2)-1))
+d=1-sum(a$V3)
+e=paste("TROGONIFORMES",d,sep="\t")
+write.table(e,file="simp_d_orderwise.txt",append=T,quote=F,sep="\t",col.names=F,row.names=F)
