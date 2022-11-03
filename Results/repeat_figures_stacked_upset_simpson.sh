@@ -94,7 +94,6 @@ Rscript simp.r
 done
 ##########Plotting barplot of Simpson's diversity index########
 ##In R##
-Rscript simpson_diversity.r
 #a=read.table("simp_d_orderwise.txt",header=F)
 #library(stringr)
 #a$V1=str_to_title(a$V1)
@@ -104,6 +103,7 @@ Rscript simpson_diversity.r
 #title(xlab="Orders",line=8,cex.lab=2)
 #title(ylab="Simpson diversity",cex.lab=2,line=2)
 #dev.off()
+Rscript simpson_diversity.r
 echo "simpsons deversity plot made"
 #################################################Simpson's diversity ends here######################################
 ###3. UpSet plot
