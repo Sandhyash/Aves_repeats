@@ -1,1 +1,3 @@
 ## The file sitemodel.outresults_together.txt is a temporary file having just two lines as MNX1 gene had no positively selected site predicted by codeml.
+Rscript repeatplotterwitheverything_table.r mnx1_aves_coordinate aves.nwk aves mnx1 10 sitemodel.outresults_together.txt
+## MNX1repeat_summary.txt is the summary file from PIC.
