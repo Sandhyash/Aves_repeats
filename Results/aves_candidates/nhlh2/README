@@ -1,1 +1,3 @@
 ## The aves_sitemodel.outresults_together.txt file is just an temporary file since no positively selected sites were identified in NHLH2 gene by codeml.
+Rscript repeatplotterwitheverything_table.r nhlh2_aves_coordinate aves.nwk aves nhlh2 20 aves_sitemodel.outresults_together.txt
+## RUNX2repeat_summary.txt is the summary file from PIC.
