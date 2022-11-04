@@ -1,1 +1,2 @@
-
+Rscript repeatplotterwitheverything.r man1c1_aves_coordinate aves.nwk aves man1c1 10 man1c1_aves_pss.txt
+## MAN1C1repeat_summary.txt is the summary file from PIC.
