@@ -1,1 +1,3 @@
+Rscript runx2_plotter.r runx2_aves_coordinate aves.nwk aves runx2 20 runx2_aves_pss.txt
+## RUNX2repeat_summary.txt is the summary file from PIC.
 
