@@ -7,3 +7,4 @@ MGSPGGCSSPSARGSLQHLLLFLLFVGPFNCFASYSRATELFYSLNEGLPAGVLIGSLARDLRLPTAGGQRPAAPQPPLS
 repeats:131-141;SLSSSSSSPDS
 ## AF-A0A6J3ERT3-F1-model_v4_pcdh20_aythya_fu.pdb is the tertiary structure (PDB file) of Aythya fuligula downloaded from the AlphaFold Protein Database.
 ## gallus_gallus_pcdh20.pdb is the PDB file modelled by SWISS-MODEL and gallus_pcdh20.zip is the file downloaded after modellingfrom the web server.
+## pcdh20_aythya_fuliga.png and pcdh20_gallus_gallus.png is downloaded from ChimeraX were the repeat regions are also highlighted for Aythya fuligula and Gallus gallus.
