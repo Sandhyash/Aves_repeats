@@ -1,1 +1,1 @@
-
+Rscript pcdh20_plotting.r pcdh20_aves_coord aves.nwk aves pcdh20 20 aves_pcdh20_pss
