@@ -1,0 +1,1 @@
+aves PCDH20 S Gallus_gallus_Meleagris_gallopavo_Numida_meleagris_Phasianus_colchicus Anas_platyrhynchos_Anser_cygnoides_domesticus_Aythya_fuligula_Cygnus_atratus_Oxyura_jamaicensis 29.25 44.4 12
