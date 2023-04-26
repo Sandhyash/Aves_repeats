@@ -1,3 +1,3 @@
 ## The files aves_coordinatecompiledwithalnlength, compiled_absrel_results.txt and aves_sitemodel.outresults_together.txt are the complete aves clade compiled file for repeat coordinates in nucleotide and amino acid, the positively selected lineages predicted by aBSREL and all the positively selected sites predicted by codeml.
 ## The aves.nwk is the tree file and the total gene list is provided in file aves_genes.
-## Using the script repeatplotterwitheverything_table.r, we plot the repeats expansion and contraction of the repeats per gene as well as the positively selected sites and lineages if present.
+## Using the script repeatplotter_everything.r, we plot the repeats expansion and contraction of the repeats per gene as well as the positively selected sites if present.
