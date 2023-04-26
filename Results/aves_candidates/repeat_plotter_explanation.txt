@@ -1,0 +1,46 @@
+Detecting orthologous repeat length contrast between species groups
+1. Input required:
+ File with clade name, species name, gene name, unaligned and aligned coordinates of
+repeats, and aligned gene length
+ Species tree
+ Clade name
+ Gene name
+ Proximity window (in nucleotides; max 20)
+ Compiled file with site-specific positive selection details
+2. Main workflow:
+i) Subsetting the dataset:
+(1) We subset the repeat coordinate file according to clade and gene name. This gives us
+species-wise coordinates of the repeats in that specific gene in the clade.
+(2) We also subset the compiled file with site-specific positive selection details according
+to gene and clade. This will provide the details of positively-selected sites in the gene
+in the clade.
+(3) We list unique species mentioned in the subsetted repeat coordinate file.
+(4) We prune the species tree according to the species mentioned in the above-created
+list.
+ii) Identification of orthologous repeats:
+**Important note: The length of the gene can vary between species, potentially changing
+the orthologous repeat coordinates between species in unaligned coordinates. But in the
+aligned file, the orthologous repeats will be aligned. We primarily use the aligned
+coordinates to identify orthologous repeats. Moreover, the length of the orthologous
+repeats can also vary between species.
+(1) We uniquely select the aligned end coordinates of the repeats in the file.
+(a) If all repeats have the same aligned end coordinate, there is only one orthologous
+repeat.
+(b) If there is more than one unique end coordinate of the repeat in the aligned file:
+(i) Either there exists more than one repeat in the gene for species, or the end
+coordinates of the orthologous repeat do not align perfectly.
+(ii) We will make a histogram of the distribution of aligned end coordinates by
+keeping the bin size of “proximity window”
+(iii) The end coordinates of the repeats within the same bin are considered
+orthologous.
+
+iii) Identifying the repeat length contrast between species groups:
+(1) We calculate the repeat length at the internodes using phylogenetically independent
+contrast (PIC) for each set of orthologous repeats.
+(2) We select the internodes with repeat lengths lesser than the 1 st percentile and greater
+than the 99 th percentile from the distribution of orthologous repeat length.
+(3) The filtered internodes having two child internodes with at least three species in both
+child internodes are selected.
+(4) We calculate the orthologous mean repeat length for both sets of child internodes.
+(5) The set of species with a larger mean repeat length is considered expanded, while the set of
+species with a smaller mean repeat length is considered contracted.
